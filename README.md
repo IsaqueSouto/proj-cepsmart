@@ -1,70 +1,85 @@
 # README.md
 
 ## CEPSmart
-Aplicação web simples para consulta de CEP utilizando a API ViaCEP, com interface amigável, listagem de endereços e sistema de modais. O projeto foi estruturado de forma modular usando JavaScript puro, facilitando manutenção e expansão.
 
----
+A simple web application for ZIP code lookup using the ViaCEP API,
+featuring a user-friendly interface, address listing, and modal system.
+The project is structured in a modular way using pure JavaScript, making
+maintenance and expansion easier.
 
-## Funcionalidades
-- Consulta de CEP via API pública ViaCEP
-- Validação simples de entrada do usuário
-- Exibição dos dados retornados em uma lista dinâmica
-- Controle de modais para visualização de detalhes
-- Organização modular (Controllers, Services, Models)
+------------------------------------------------------------------------
 
----
+## Features
 
-## Estrutura do Projeto
-```
-proj-cepsmart
-├── index.html
-├── css/
-│   ├── buttons.css
-│   ├── modal.css
-│   └── styles.css
-├── js/
-│   ├── controllers/
-│   ├── models/
-│   └── services/
-└── README.md
-```
+-   ZIP code lookup using the public ViaCEP API\
+-   Basic user input validation\
+-   Display of returned data in a dynamic list\
+-   Modal control for viewing details\
+-   Modular organization (Controllers, Services, Models)
 
----
+------------------------------------------------------------------------
 
-## Tecnologias Utilizadas
-- **HTML5**
-- **CSS3**
-- **JavaScript (ES6)**
-- **ViaCEP API**
+## Project Structure
 
----
+    proj-cepsmart
+    ├── index.html
+    ├── css/
+    │   ├── buttons.css
+    │   ├── modal.css
+    │   └── styles.css
+    ├── js/
+    │   ├── controllers/
+    │   ├── models/
+    │   └── services/
+    └── README.md
 
-## Como Executar
-1. Baixe ou clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/proj-cepsmart.git
-   ```
-2. Acesse a pasta do projeto:
-   ```bash
-   cd proj-cepsmart
-   ```
-3. Abra o arquivo `index.html` em seu navegador.
+------------------------------------------------------------------------
 
-Não é necessário backend ou instalações adicionais.
+## Technologies Used
 
----
+-   **HTML5**
+-   **CSS3**
+-   **JavaScript (ES6)**
+-   **ViaCEP API**
 
-## Organização do Código
+------------------------------------------------------------------------
+
+## How to Run
+
+1.  Download or clone the repository:
+
+    ``` bash
+    git clone https://github.com/your-user/proj-cepsmart.git
+    ```
+
+2.  Enter the project folder:
+
+    ``` bash
+    cd proj-cepsmart
+    ```
+
+3.  Open the `index.html` file in your browser.
+
+No backend or additional installations are required.
+
+------------------------------------------------------------------------
+
+## Code Organization
+
 ### **Models**
-- `address.js`: Representa um endereço retornado pela API.
+
+-   `address.js`: Represents an address returned by the API.
 
 ### **Services**
-- `request-service.js`: Faz requisições HTTP.
-- `address-service.js`: Controla a lógica de busca e normalização de dados.
-- Exceções customizadas em `exceptions/`.
+
+-   `request-service.js`: Handles HTTP requests.\
+-   `address-service.js`: Manages the logic for data fetching and
+    normalization.\
+-   Custom exceptions in `exceptions/`.
 
 ### **Controllers**
-- `form-controller.js`: Gerencia o formulário de busca.
-- `list-controller.js`: Lista e manipula endereços retornados.
-- `modal-controller.js`: Exibe dados em modal.
-- `page-controller.js`: Integra os demais controllers.
+
+-   `form-controller.js`: Manages the search form.\
+-   `list-controller.js`: Displays and manipulates returned addresses.\
+-   `modal-controller.js`: Shows data in a modal.\
+-   `page-controller.js`: Integrates the other controllers.
